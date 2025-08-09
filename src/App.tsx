@@ -18,6 +18,12 @@ import Blank from "./pages/Blank";
 import AppLayout from "./layout/AppLayout";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import Home from "./pages/Dashboard/Home";
+import KepegawaianPage from "./pages/Dashboard/BackOffice/KepegawaianPage";
+import ManajementAssetRsPage from "./pages/Dashboard/BackOffice/ManajementAssetRsPage";
+import PosPage from "./pages/Dashboard/BackOffice/PosPage";
+import AkuntansiPage from "./pages/Dashboard/BackOffice/AkuntansiPage";
+import InventoryPage from "./pages/Dashboard/BackOffice/InventoryPage";
+import AplicaresPage from "./pages/Dashboard/BackOffice/AplicaresPage";
 
 export default function App() {
   return (
@@ -36,6 +42,14 @@ export default function App() {
 
             {/* Forms */}
             <Route path="/form-elements" element={<FormElements />} />
+
+            {/* Back office */}
+            <Route path="/backoffice-kepegawaian" element={<KepegawaianPage />} />
+            <Route path="/backoffice-manajemen-asset-rs" element={<ManajementAssetRsPage />} />
+            <Route path="/backoffice-pos" element={<PosPage />} />
+            <Route path="/backoffice-akuntansi" element={<AkuntansiPage />} />
+            <Route path="/backoffice-inventaris" element={<InventoryPage />} />
+            <Route path="/backoffice-aplicares" element={<AplicaresPage />} />
 
             {/* Tables */}
             <Route path="/basic-tables" element={<BasicTables />} />

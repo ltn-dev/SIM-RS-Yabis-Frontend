@@ -41,6 +41,18 @@ const navItems: NavItem[] = [
     path: "/profile",
   },
   {
+    name: "Back Office",
+    icon: <ListIcon />,
+    subItems: [
+      { name: "Kepegawaian", path: "/backoffice-kepegawaian", pro: false },
+      { name: "Manajemen Asset RS", path: "/backoffice-manajemen-asset-rs", pro: false },
+      { name: "POS", path: "/backoffice-pos", pro: false },
+      { name: "Akuntansi", path: "/backoffice-akuntansi", pro: false },
+      { name: "Inventaris", path: "/backoffice-inventaris", pro: false },
+      { name: "Aplicares", path: "/backoffice-aplicares", pro: false },
+    ],
+  },
+  {
     name: "Forms",
     icon: <ListIcon />,
     subItems: [{ name: "Form Elements", path: "/form-elements", pro: false }],
